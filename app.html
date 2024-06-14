@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-screen h-screen max-w-screen max-h-screen overflow-hidden">
+    <div class="flex flex-col h-full">
+        <div class="flex flex-row flex-grow h-[calc(100vh - 4rem)]">
+            <div class="flex flex-col min-w-56 max-w-56 bg-gradient-to-b from-stone-200 via-stone-50 to-stone-200">
+                <div class="min-w-[64px] max-w-[64px] min-h-[64px] max-h-[64px] m-8 bg-black border-2 rounded-xl"></div>
+                <div class="flex flex-col overflow-y-auto">
+                    <div class="flex flex-col"><button class="px-8 py-2 text-left">
+                            <div class="flex flex-row items-center justify-between">Overview</div>
+                        </button><button class="px-8 py-2 text-left">
+                            <div class="flex flex-row items-center justify-between">System Settings</div>
+                        </button><button class="px-8 py-2 text-left">
+                            <div class="flex flex-row items-center justify-between">Admin &amp; Users<span
+                                    class="transition-all text-2xl">›</span></div>
+                        </button><button class="px-8 py-2 text-left">
+                            <div class="flex flex-row items-center justify-between">Storage / File</div>
+                        </button><button class="px-8 py-2 text-left">
+                            <div class="flex flex-row items-center justify-between">Plugin Center</div>
+                        </button><button class="px-8 py-2 text-left">
+                            <div class="flex flex-row items-center justify-between">Safety Control</div>
+                        </button><button class="px-8 py-2 text-left">
+                            <div class="flex flex-row items-center justify-between">Server</div>
+                        </button></div>
+                </div>
+            </div>
+            <div
+                class="flex flex-col flex-auto min-w-[calc(100vw - 14rem)] max-w-[calc(100vw - 14rem)] bg-gradient-to-b from-stone-200 to-stone-50">
+                <div class="flex flex-row items-center gap-4 p-4">
+                    <div class="w-8 h-8 bg-black border-2 rounded-xl"></div><span>System Settings</span>
+                </div>
+                <div class="flex flex-row justify-between p-4 bg-yellow-300 flex-wrap">
+                    <div class="flex flex-row items-center gap-2"><span>Admin &amp; Users</span><span>→</span><span>User
+                            &amp; Groups</span></div>
+                    <div class="flex flex-row gap-4"><input type="text" class="rounded">
+                        <div class="w-8 h-8 bg-black border-2 rounded-xl"></div>
+                        <div class="w-8 h-8 bg-black border-2 rounded-xl"></div>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-auto p-4 gap-4 overflow-y-auto">
+                    <div class="flex flex-row justify-between items-center flex-wrap gap-4">
+                        <div class="flex flex-row gap-4 flex-wrap"><button
+                                class="border-2 border-solid border-slate-300 bg-white rounded px-8 py-2">
+                                <div class="flex flex-row items-center gap-2"><span>Group1</span>⯆</div>
+                            </button><button class="border-2 border-solid border-slate-300 bg-white rounded px-8 py-2">
+                                <div class="flex flex-row items-center gap-2"><span>New User</span>⯆</div>
+                            </button><button class="border-2 border-solid border-slate-300 bg-white rounded px-8 py-2">
+                                <div class="flex flex-row items-center gap-2"><span>Bulk Operations</span>⯆</div>
+                            </button><button class="bg-gray-300 rounded px-8 py-2">Disable</button><button
+                                class="bg-gray-300 rounded px-8 py-2">Enable</button><button
+                                class="bg-gray-300 rounded px-8 py-2">Delete</button></div>
+                        <div>id: 1, dep: 1</div>
+                    </div>
+                    <table class="overflow-auto">
+                        <thead class="text-left">
+                            <tr class="border-2 border-solid border-slate-300 rounded bg-slate-500 text-white">
+                                <th class="px-8 py-2">Nickname/Account</th>
+                                <th class="px-8 py-2">Role ⯆</th>
+                                <th class="px-8 py-2">Space Usage ⯆</th>
+                                <th class="px-8 py-2">Group</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-2 border-solid border-slate-300 rounded bg-white">
+                                <td class="px-8 py-4">Administrator</td>
+                                <td class="px-8 py-4">Administrator</td>
+                                <td class="px-8 py-4">
+                                    <div class="flex flex-col w-fit">
+                                        <div class="flex flex-row h-2">
+                                            <div class="w-1/6 bg-yellow-300 rounded-tl rounded-bl"></div>
+                                            <div class="flex-grow bg-gray-300 rounded-tr rounded-br"></div>
+                                        </div>1.1MB/Unlimited
+                                    </div>
+                                </td>
+                                <td class="px-8 py-4">Group1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="flex flex-row-reverse p-4"><span class="h-min">Total 1 page (1 record)</span></div>
+            </div>
+        </div>
+        <div class="h-16 flex flex-row bg-slate-100 px-16 py-4 justify-between"><button
+                class="bg-black text-white rounded px-2">File</button>
+            <div class="w-8 h-8 bg-black border-2 rounded-xl"></div>
+        </div>
+    </div>
+</body>
+
+</html>
